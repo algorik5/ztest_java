@@ -1,0 +1,24 @@
+<!-- slf4j debug <configuration debug="true">  -->
+<!-- slf4j debug	<statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />   -->
+<!-- reload <configuration scan="true" scanPeriod="30 seconds">  -->
+
+
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+<!--       <pattern>%d{HH:mm:ss.SSS} %-5level [%thread] [%file:%line] %caller %method %logger{20} - %msg%n</pattern> -->
+      <pattern>%date{HH:mm:ss} [LogBack %level] [%thread] [%file:%line] %method %logger{0} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+
+<!--   <logger name="chapters.configuration" level="INFO" /> -->
+<!--   <logger name="chapters.configuration.Foo" level="DEBUG" /> -->
+  
+  
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
+
