@@ -1,6 +1,6 @@
 
----------------------------- jetty + swagger
-------  pom.xml
+# ---------------------------- jetty + swagger
+# ------  pom.xml
 <dependency> 
 	<groupId>io.springfox</groupId> 
 	<artifactId>springfox-swagger-ui</artifactId> 
