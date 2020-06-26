@@ -69,9 +69,7 @@ public class SwaggerJetty {
         
 		/////////////////// ok - http://localhost:8080/swagger/
         ResourceHandler swagger = new ResourceHandler();
-        swagger.setResourceBase(SwaggerJetty.class.getClassLoader()
-            .getResource("META-INF/resources/webjars/swagger-ui/3.27.0")
-            .toURI().toString());
+        swagger.setResourceBase(SwaggerJetty.class.getClassLoader().getResource("META-INF/resources/webjars/swagger-ui/3.27.0").toURI().toString());
         ContextHandler contextswagger = new ContextHandler();
         contextswagger.setContextPath("/swagger/");
         contextswagger.setHandler(swagger);
