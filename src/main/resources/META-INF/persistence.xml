@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="PERSISTENCE">
+        <description>postgres</description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="postgres"/>
+        </properties>
+    </persistence-unit>
+    
+    
+<!--  <session-factory> -->
+<!--     <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> -->
+<!--     <property name="hibernate.implicit_naming_strategy">default</property> -->
+<!--     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property> -->
+<!--     <property name="hibernate.connection.provider_class">org.hibernate.hikaricp.internal.HikariCPConnectionProvider</property> -->
+<!--     <property name="hibernate.hikari.minimumIdle">5</property> -->
+<!--     <property name="hibernate.hikari.maximumPoolSize">20</property> -->
+<!--     <property name="hibernate.hikari.idleTimeout">30000</property> -->
+<!--     <property name="hibernate.connection.username">${db_user_name}</property> -->
+<!--     <property name="hibernate.connection.password"></property> -->
+<!--     <property name="hibernate.connection.url">${db_connection_url}</property> -->
+<!--     <property name="hibernate.hbm2ddl.auto">none</property> -->
+<!--     <property name="hibernate.connection.autocommit">false</property> -->
+<!--     <property name="hibernate.bytecode.use_reflection_optimizer">false</property> -->
+<!--     <property name="hibernate.jdbc.time_zone">GMT</property> -->
+<!--     <property name="hibernate.generate_statistics">false</property> This affects performance, use only in development -->
+<!--     <property name="show_sql">false</property> -->
+<!--   </session-factory>     -->
+    
+</persistence>
+
+

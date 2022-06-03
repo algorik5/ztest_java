@@ -7,6 +7,30 @@
   <dependencies>
   
 
+
+
+<!-- mvn install:install-file -Dfile=D:\project\kwakEclipse\ztest_java\lib\opensearch-sql-jdbc-1.1.0.1.jar -DgroupId=org.opensearch.client -DartifactId=opensearch-sql-jdbc -Dversion=1.1.0.1 -Dpackaging=jar -DgeneratePom=true -->
+<dependency>
+    <groupId>org.opensearch.client</groupId>
+    <artifactId>opensearch-sql-jdbc</artifactId>
+    <version>1.1.0.1</version>
+</dependency>
+
+
+<!-- jpa -->
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.0.2.Final</version>
+</dependency>
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.3.6</version>
+</dependency>
+
+
 <!-- <dependency> -->
 <!--     <groupId>org.apache.httpcomponents.core5</groupId> -->
 <!--     <artifactId>httpcore5</artifactId> -->
